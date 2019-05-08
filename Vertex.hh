@@ -5,7 +5,6 @@ private:
   int vertexNumber;
   int weight;
   friend std::ostream& operator << (ostream& stm, const Vertex &c);
-  // friend bool operator ==( const Vertex & v );
 public:
   Vertex(){};
   ~Vertex(){};

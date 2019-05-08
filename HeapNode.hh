@@ -3,9 +3,7 @@ class HeapNode{
 private:
 int vertexNumber;
 int distanceFromSource;
- // friend HeapNode & operator =( const HeapNode &h );
- // friend std::ostream& operator << (ostream& stm, const HeapNode &c);
- // friend std::ostream& operator << (ostream& stm, const Vertex &c);
+
 public:
 
   void setHeapNode(int n, int d){
@@ -24,14 +22,5 @@ public:
   int returnDistanceFromSource()const{
     return distanceFromSource;
   }
-  // HeapNode& operator = ( const HeapNode &h ){
-  //   this->vertexNumber=h.returnVertexNumber();
-  //   this->distanceFromSource=h.returnDistanceFromSource();
-  //   return *this;
-  // }
+
 };
-// std::ostream& operator << (ostream& stm, const HeapNode &c){
-//   stm << c.vertexNumber;
-//   stm <<" "<<c.distanceFromSource<<'\n';
-//   return stm;
-// }

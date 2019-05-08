@@ -22,10 +22,8 @@ bool exist(const T& element){
   do{
     if(iter->data == element){
       exist=true;
-      // return exist;
     }
     iter=iter->next;
-    // cout<<exist<<endl;
   }  while( iter != NULL );
   delete iter;
   return exist;

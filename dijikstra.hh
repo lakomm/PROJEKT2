@@ -1,6 +1,4 @@
-// #include"graph2.hh"
 #include"MinHeap.hh"
-#include<string>
 #include<time.h>
 clock_t start,stop;
 double czas;

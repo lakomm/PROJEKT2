@@ -48,7 +48,6 @@ int returnNumberOfNeighbours(int v){
 int returnNeighbourNumber(int v, int n){
   int j=0;
   int k=0;
-
     // for(k=0; k<numberOfVertices; k++){
       while(k<numberOfVertices && j<n){
         if(adjMatrix[v][k].seeVertexWeight()!=0){
@@ -62,7 +61,6 @@ int returnNeighbourNumber(int v, int n){
 int returnNeighbourWeight(int v, int n){
   int j=0;
   int k=0;
-    // for(k=0; k<numberOfVertices; k++){
   while(k<numberOfVertices && j<n){
         if(adjMatrix[v][k].seeVertexWeight()!=0){
           j++;

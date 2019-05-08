@@ -3,16 +3,15 @@
 #include<climits>
 class Graph2{
 private:
-List<Vertex>* adjList;
 int numberOfVertices;
 int numberOfEdges;
+List<Vertex>* adjList;
 public:
 Graph2(int v){
   numberOfVertices=v;
   numberOfEdges=0;
   adjList= new List<Vertex>[numberOfVertices];
 }
-// ~Graph2(){};
 // (numer wierzchołka początkowego, numer wierzchołka końcowego, waga krawędzi)
 void addEdge(int begin,int end, int weight){
   if(begin!=end && weight >0 ){              //krawędzie nie mogą się powtarzac
@@ -58,16 +57,7 @@ void removeAllEdges(){
   numberOfEdges=0;
 }
 
-void removeAllVertices(){
-  for(int i=0;i<numberOfVertices;i++)
-{
-    delete[] adjList;
-}
-  numberOfVertices=0;
-}
-// List<Vertex>* returnList(){
-//   return adjList;
-// }
+
 bool edgeExist(int begin, int end){
     Vertex v1; v1.setVertexNumber(end);
     Vertex v2; v2.setVertexNumber(begin);
